@@ -26,8 +26,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
 }
 
 h1 {
@@ -35,12 +34,6 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
 .logo {
   height: 6em;
@@ -56,6 +49,10 @@ h1 {
 }
 
 .card {
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  text-align: center;
   padding: 2em;
 }
 
@@ -93,4 +90,39 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.cardClass, .cardBack{
+
+width: 100px;
+height: 130px;
+
+}
+
+.deckDiv{
+text-align: center;
+align-items: center;
+margin: 20px;
+}
+
+.restOfDeck, .handValue{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+#remainingCards, #handValue{
+  margin-left: 15px;
+}
+
+#cardsArea{
+width: 369px;
+min-height: 138px;
+}
+
+.lowControls{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
