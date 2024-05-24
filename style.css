@@ -49,11 +49,14 @@ h1 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0;
   align-items: center;
   text-align: center;
   padding: 2em;
+  width: 100%;
 }
 
 .read-the-docs {
@@ -124,5 +127,16 @@ min-height: 138px;
   display: flex;
   text-align: center;
   align-items: center;
-  flex-direction: column;
+}
+
+/* #playerControls, #botControls{
+
+} */
+
+.playArea{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
 }
